@@ -12,7 +12,7 @@ This starter focuses on building profiles using commands. Each command requires 
 
 ### Option one: One-click deploy
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/jobin-logidots/engagespot-msteams-started-kit)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/jobin-logidots/engagespot-msteams-starter-repo)
 
 Clicking this button will create a new repo for you that looks like this one, and sets that repo up immediately for deployment on Netlify. You will be prompted for a repo name and to provide the values for the following environment variables to use with Engagespot and the Microsoft Teams Bot.
 
