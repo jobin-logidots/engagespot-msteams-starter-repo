@@ -1,0 +1,10 @@
+[[redirects]]
+  from = "/api/messages"
+  to = "/.netlify/functions/messages"
+  status = 200
+
+[template.environment]
+  ENGAGESPOT_API_KEY = "engagespot API KEY  (required)"
+  ENGAGESPOT_API_SECRET = "engagespot API SECRET  (required)"
+  MSTEAMS_APP_ID = "Microsoft Teams App ID (required)"
+  MSTEAMS_APP_PASSWORD = "Microsoft Teams App Password (required)"
