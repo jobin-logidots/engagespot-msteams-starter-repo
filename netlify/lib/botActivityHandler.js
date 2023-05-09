@@ -1,5 +1,5 @@
 const { TurnContext, TeamsActivityHandler } = require("botbuilder");
-const Engagespot = require('engagespot-node');
+import { EngagespotClient } from "@engagespot/node";
 
 class BotActivityHandler extends TeamsActivityHandler {
   constructor() {
@@ -53,7 +53,14 @@ class BotActivityHandler extends TeamsActivityHandler {
     }
 
     try {
-     //Todo
+      const client = EngagespotClient({
+        apiKey: process.env.ENGAGESPOT_API_KEY,
+        apiSecret: process.env.ENGAGESPOT_API_SECRET
+      });
+      //Creating or Updating a user
+      client.createOrUpdateUser(recipientId,
+        profile
+      );
 
       await context.sendActivity(`Your profile has been updated.`);
     } catch (err) {
