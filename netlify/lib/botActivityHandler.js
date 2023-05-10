@@ -1,5 +1,5 @@
 const { TurnContext, TeamsActivityHandler } = require("botbuilder");
-import { EngagespotClient } from "@engagespot/node";
+const { EngagespotClient } = require("@engagespot/node");
 
 class BotActivityHandler extends TeamsActivityHandler {
   constructor() {
